@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import {FiArrowUpRight} from "react-icons/fi"
+import { FaBars } from "react-icons/fa"
 
 const Header = () => {
     const links = [
@@ -11,7 +12,9 @@ const Header = () => {
     ]
     return (
         <nav className="container mx-auto flex justify-center items-center">
-            <div className='border bg-black/90 w-[35%] text-white py-2 px-4 rounded-4xl flex justify-center items-center mt-7'>
+            <div className='border w-[70%] bg-black/90 text-white py-2 px-4 rounded-4xl flex justify-between items-center mt-7'>
+                <h2 className='text-2xl brand-name'>Aghogho</h2>
+                <FaBars size={16} className="md:hidden font-bold" />
                 <ul className='flex gap-10 justify-center items-center'>
                     {
                         links.map((link, index) => (

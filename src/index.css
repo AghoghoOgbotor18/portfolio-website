@@ -1,1 +1,17 @@
 @import "tailwindcss";
+*{
+  font-family: Helvetica, sans-serif;
+  
+}
+@layer components{
+  .button-white{
+    @apply bg-gray-300 shadow-2xl text-black text-lg py-2 px-4 w-fit rounded-3xl;
+  }
+  .button-dark{
+    @apply bg-black/95 shadow-2xl text-white text-lg py-2 px-4 w-fit rounded-3xl
+  } 
+  .brand-name{
+    font-family: "dancing script", cursive;
+  }
+}
+
