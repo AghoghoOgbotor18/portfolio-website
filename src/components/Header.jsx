@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FiArrowUpRight } from "react-icons/fi"
 import { FaBars, FaTimes } from "react-icons/fa"
 
@@ -24,9 +24,9 @@ const Header = () => {
             <nav className="fixed top-7 left-1/2 -translate-x-1/2 w-[90%] md:w-[70%] bg-black/90 backdrop-blur-md border border-white/10 text-white py-4 px-6 rounded-4xl flex justify-between items-center z-[70] shadow-lg">
 
                 {/* Logo */}
-                <h2 className='text-2xl brand-name'>
+                <Link to="/" className='text-3xl brand-name'>
                     Aghogho
-                </h2>
+                </Link>
 
                 {/* Desktop Links */}
                 <ul className='hidden md:flex gap-10 justify-center items-center'>
