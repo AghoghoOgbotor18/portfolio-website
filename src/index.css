@@ -1,7 +1,7 @@
 @import "tailwindcss";
 body{
   font-family: Helvetica, sans-serif;
-  
+  background: linear-gradient(0deg, rgb(163, 162, 162) 65%, rgba(171, 171, 171, 0) 100%);
 }
 @layer components{
   .button-white{
@@ -13,5 +13,25 @@ body{
   .brand-name{
     font-family: "Dancing Script", cursive;
   }
+  .button{
+    @apply bg-linear-to-b from-white/15 to-white/2 py-3 px-4 rounded-xl shadow-2xl cursor-pointer hover:from-white/2 hover:to-white/15 duration-500
+  }
+  .slider-track{
+    width: max-content;
+    animation: scroll 25s linear infinite;
+  }
+
+  .slider-track:hover{
+    animation-play-state: paused;
+  }
 }
 
+@keyframes scroll{
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-50%);
+  }
+}
