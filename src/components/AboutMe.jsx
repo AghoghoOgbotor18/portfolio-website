@@ -12,6 +12,7 @@ import javascript from "../assets/javascript.png"
 import shopify from "../assets/shopify.png"
 import wordpress from "../assets/wordpress.png"
 import firebase from "../assets/firebase.png"
+import github from "../assets/github.png"
 
 const AboutMe = () => {
 
@@ -23,7 +24,8 @@ const AboutMe = () => {
     { image: css, name: "CSS" },
     { image: firebase, name: "Firebase" },
     { image: wordpress, name: "WordPress" },
-    { image: shopify, name: "Shopify" }
+    { image: shopify, name: "Shopify" },
+    { image: github, name: "Github" }
   ];
 
   return (
