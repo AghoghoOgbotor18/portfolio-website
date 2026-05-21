@@ -1,14 +1,14 @@
 @import "tailwindcss";
 body{
   font-family: Helvetica, sans-serif;
-  background: linear-gradient(0deg, rgb(163, 162, 162) 65%, rgba(171, 171, 171, 0) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0, 0.9) 15%, rgb(202, 202, 202) 100%);
 }
 @layer components{
   .button-white{
-    @apply bg-gray-300 shadow-2xl text-black text-lg py-2 px-4 w-fit rounded-3xl;
+    @apply bg-linear-to-b from-gray-300 to-gray-400 shadow-2xl text-black text-lg py-3 px-6 w-fit rounded-3xl hover:bg-gray-400;
   }
   .button-dark{
-    @apply bg-black/95 shadow-2xl text-white text-lg py-2 px-4 w-fit rounded-3xl
+    @apply bg-linear-to-b from-black/90 to-black shadow-2xl text-white text-lg py-3 px-6 w-fit rounded-3xl hover:bg-black/80;
   } 
   .brand-name{
     font-family: "Dancing Script", cursive;
