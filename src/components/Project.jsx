@@ -20,7 +20,7 @@ const Project = () => {
                         <p>Showcase of some of my recent sleek websites</p>
                     </div>
                     <div className='flex flex-col md:flex-row items-start md:justify-center md:items-center gap-4'>
-                        <Link to="/project" className='button-dark flex justify-center max-sm:w-60'>See All Projects</Link>
+                        <Link to="/projects" className='button-dark flex justify-center max-sm:w-60'>See All Projects</Link>
                         <Link to="#" className='button-white flex justify-center max-sm:w-60'>Contact Now</Link>
                     </div>
                 </div>
