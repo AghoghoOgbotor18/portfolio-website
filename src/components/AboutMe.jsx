@@ -2,7 +2,7 @@ import React from 'react'
 import userPhoto from "../assets/sylvia-photo.jpg"
 import { FiRadio } from "react-icons/fi"
 import { Link } from 'react-router-dom'
-import { FaLinkedin, FaFacebook, FaTiktok, FaPhone } from "react-icons/fa"
+import { FaLinkedin, FaFacebook, FaTiktok, FaPhone, FaMarkdown, FaCheck } from "react-icons/fa"
 
 import tailwindcss from "../assets/tailwindcss.png"
 import reactjs from "../assets/reactjs.png"
@@ -93,6 +93,27 @@ const AboutMe = () => {
               </p>
             </div>
             <hr className='border-white/10' />
+
+            <div>
+              <h3 className='text-2xl font-semibold mb-4'>
+                Education
+              </h3>
+              <div className='flex flex-col gap-8 text-gray-400'>
+                <div className='flex flex-col gap-2'>
+                  <h4 className='font-semibold text-lg'>M.Sc Computer Science</h4>
+                  <p className='text-md'>University of Port Harcourt</p>
+                  <p className='text-sm font-light italic'>March 2026 - Present</p>
+                </div>
+                <div className='flex flex-col gap-2'>
+                  <h4 className='font-semibold text-lg'>B.Sc Computer Science</h4>
+                  <p className='text-md'>Federal University of Petroleum Resources, Effurun</p>
+                  <p className='text-sm font-light italic'>January 2018 - May 2023</p>
+                </div>
+              </div>
+            </div>
+            <hr className='border-white/10' />
+
+            {/* Quick Stats */}
             <div>
               <h3 className='text-2xl font-semibold mb-4'>
                 Quick Stats
@@ -114,9 +135,28 @@ const AboutMe = () => {
                 </div>
 
                 <div className='bg-white/5 border border-white/10 p-2 rounded-2xl'>
-                  <h4 className='text-2xl font-bold text-white'>UI</h4>
+                  <h4 className='text-2xl font-bold text-white'>UI/UX</h4>
                   <p className='text-gray-400'>Focused Developer</p>
                 </div>
+              </div>
+            </div>
+            <hr className='border-white/10' />
+
+            {/* Certifications */}
+            <div>
+              <h3 className='text-2xl font-semibold mb-4'>
+                Certifications
+              </h3>
+              <div className='flex flex-col gap-4'>
+                <p className='flex items-center gap-2 bg-white/5 border border-white/10 p-2 rounded-lg text-sm'>
+                  <FaCheck />Frontend Development using HTML, CSS and JavaScript  - <i>Udemy</i>
+                </p>
+                <p className='flex items-center gap-2 bg-white/5 border border-white/10 p-2 rounded-lg text-sm'>
+                  <FaCheck />Software Development  - <i>Tech4dev</i>
+                </p>
+                <p className='flex items-center gap-2 bg-white/5 border border-white/10 p-2 rounded-lg text-sm'>
+                  <FaCheck />React and Advanced React  - <i>Udemy</i>
+                </p>
               </div>
             </div>
             <hr className='border-white/10' />
