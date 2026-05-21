@@ -4,7 +4,7 @@ import AboutMe from '../components/AboutMe'
 import Project from '../components/Project'
 import { FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router'
-import Whatsapp from '../components/whatsapp'
+import WhatsappLink from '../components/WhatsappLink'
 
 const Home = () => {
     return (
@@ -12,7 +12,7 @@ const Home = () => {
         <Hero />
         <AboutMe />
         <Project />
-        <Whatsapp />
+        <WhatsappLink />
       </>
     )
 }
