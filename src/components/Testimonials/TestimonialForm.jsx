@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { TbSend } from 'react-icons/tb'
 import StarRating from './StarRating'
 import { avatarColors } from './TestimonialData'
+import { FaCheck } from 'react-icons/fa'
 
 const TestimonialForm = ({ onAdd }) => {
     const [form, setForm] = useState({ name: '', role: '', message: '', rating: 5 })
@@ -36,7 +37,8 @@ const TestimonialForm = ({ onAdd }) => {
         setForm({ name: '', role: '', message: '', rating: 5 })
         setErrors({})
         setSubmitted(true)
-        setTimeout(() => setSubmitted(false), 3000)
+        setTimeout(() => setSubmitted(false), 3000);
+        scrollTo({top: 0, behavior: "smooth"})
     }
 
     const inputBase = (field) => `w-full px-4 py-3 rounded-xl border text-sm text-white bg-white/5 outline-none transition-all duration-200 placeholder:text-white/20
@@ -118,7 +120,7 @@ const TestimonialForm = ({ onAdd }) => {
                             : 'bg-white text-black hover:bg-gray-200 hover:-translate-y-0.5 active:scale-95'
                         }`}
                 >
-                    {submitted ? <>✓ Testimonial Added!</> : <>Submit Testimonial <TbSend size={16} /></>}
+                    {submitted ? <><FaCheck /> Testimonial Added!</> : <>Submit Testimonial <TbSend size={16} /></>}
                 </button>
             </div>
         </div>
