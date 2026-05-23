@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MdRadioButtonChecked } from 'react-icons/md'
 import { HiStar } from 'react-icons/hi'
-import { initialTestimonials } from './testimonialData'
+import { initialTestimonials } from './TestimonialData'
 import TestimonialCard from './TestimonialCard'
 import TestimonialForm from './TestimonialForm'
 
