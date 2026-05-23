@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { TbSend } from 'react-icons/tb'
 import StarRating from './StarRating'
-import { avatarColors } from './testimonialData'
+import { avatarColors } from './TestimonialData'
 
 const TestimonialForm = ({ onAdd }) => {
     const [form, setForm] = useState({ name: '', role: '', message: '', rating: 5 })
