@@ -151,7 +151,7 @@ const Services = () => {
                         <h4 className='text-xl font-semibold'>Got a project in mind?</h4>
                         <p className='text-gray-400 text-sm'>Let's build something great together.</p>
                     </div>
-                    <div className='flex gap-3 flex-wrap'>
+                    <div className='flex gap-3 flex-wrap justify-center items-center'>
                         <Link to="#" className='button-dark flex items-center gap-2 justify-center'>
                             Start a Project <FiArrowUpRight size={16} />
                         </Link>
