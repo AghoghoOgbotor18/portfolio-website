@@ -6,7 +6,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router'
 import WhatsappLink from '../components/WhatsappLink'
 import Services from '../components/Services'
-import Testimonials from '../components/Testimonials'
+import Testimonial from "../components/Testimonial"
 
 const Home = () => {
     return (
