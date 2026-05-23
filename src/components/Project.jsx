@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard'
 
 const Project = () => {
     return (
-        <section className='px-10 py-8 max-sm:px-4' style={{background: "linear-gradient(0deg, rgba(0,0,0, 0.9) 15%, rgb(202, 202, 202) 100%)"}}>
+        <section className='px-10 py-8 max-sm:px-4' style={{background: "linear-gradient(0deg, rgba(0,0,0, 0.5) 15%, rgb(202, 202, 202) 100%)"}}>
             <div className='flex flex-col gap-8 items-start md:justify-center md:items-center'>
                 <p className='bg-black/95 text-white py-2 px-7 rounded-4xl w-fit flex justify-center items-center gap-1 shadow-black shadow-2xl'>
                     <MdRadioButtonChecked /> Projects
@@ -27,6 +27,12 @@ const Project = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 py-8'>
                 <ProjectCard />
+            </div>
+
+            <div className='flex justify-center mt-2 pb-4'>
+                <Link to="/projects" className='button-dark flex justify-center items-center gap-2'>
+                    See All Projects <FiArrowUpRight size={16} />
+                </Link>
             </div>
         </section>
     )
