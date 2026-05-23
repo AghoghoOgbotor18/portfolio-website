@@ -5,7 +5,7 @@ import { initialTestimonials } from './testimonialData'
 import TestimonialCard from './TestimonialCard'
 import TestimonialForm from './TestimonialForm'
 
-const Testimonials = () => {
+const Testimonial = () => {
     const [testimonials, setTestimonials] = useState(initialTestimonials)
 
     const handleAdd = (newTestimonial) => {
@@ -67,4 +67,4 @@ const Testimonials = () => {
     )
 }
 
-export default Testimonials
+export default Testimonial

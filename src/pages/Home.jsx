@@ -16,7 +16,7 @@ const Home = () => {
         <Project />
         <WhatsappLink />
         <Services />
-        <Testimonials />
+        <Testimonial />
       </>
     )
 }
