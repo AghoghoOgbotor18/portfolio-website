@@ -5,6 +5,7 @@ import Project from '../components/Project'
 import { FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router'
 import WhatsappLink from '../components/WhatsappLink'
+import Services from '../components/Services'
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
         <AboutMe />
         <Project />
         <WhatsappLink />
+        <Services />
       </>
     )
 }
