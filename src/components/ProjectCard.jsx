@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router'
+import { Link, useNavigate } from 'react-router-dom'
 import ponytelle from "../assets/ponytelle.webp"
 import riyans from "../assets/riyans.webp"
 import aippt from "../assets/aippt.webp"
