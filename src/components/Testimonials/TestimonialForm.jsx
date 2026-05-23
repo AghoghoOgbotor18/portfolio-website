@@ -38,7 +38,6 @@ const TestimonialForm = ({ onAdd }) => {
         setErrors({})
         setSubmitted(true)
         setTimeout(() => setSubmitted(false), 3000);
-        scrollTo({top: 0, behavior: "smooth"})
     }
 
     const inputBase = (field) => `w-full px-4 py-3 rounded-xl border text-sm text-white bg-white/5 outline-none transition-all duration-200 placeholder:text-white/20
