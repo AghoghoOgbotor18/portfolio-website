@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router'
-import ponytelle from "../assets/ponnytelle.png"
-import riyans from "../assets/riyans.png"
-import aippt from "../assets/aippt.png"
-import salarySplit from "../assets/salary-spliter.png"
-import shopbuy from "../assets/shopbuy.png"
-import nairabank from "../assets/nairabank.png"
+import ponytelle from "../assets/ponytelle.webp"
+import riyans from "../assets/riyans.webp"
+import aippt from "../assets/aippt.webp"
+import salarySplit from "../assets/salary-spliter.webp"
+import shopbuy from "../assets/shopbuy.webp"
+import nairabank from "../assets/nairabank.webp"
+import hospitality from "../assets/hospitality.webp"
 
 const projects = [
     { id: 1, image: ponytelle, title: "Ponytelle", span: "md:col-span-2" },
@@ -14,7 +15,7 @@ const projects = [
     { id: 4, image: salarySplit, title: "Salary Splitter", span: "md:col-span-2" },
     { id: 5, image: shopbuy, title: "ShopBuy", span: "md:col-span-1" },
     { id: 6, image: nairabank, title: "NairaBank", span: "md:col-span-1" },
-    { id: 7, image: riyans, title: "Riyans", span: "md:col-span-1" },
+    { id: 7, image: hospitality, title: "Hospitality", span: "md:col-span-1" },
 ]
 
 const ProjectCard = () => {
