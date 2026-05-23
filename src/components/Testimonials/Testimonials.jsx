@@ -19,10 +19,10 @@ const Testimonials = () => {
                         <p className='bg-black/95 text-white py-2 px-5 rounded-full w-fit flex items-center gap-2 text-sm shadow-black shadow-2xl'>
                             <MdRadioButtonChecked /> Testimonials
                         </p>
-                        <h2 className='text-5xl max-sm:text-4xl font-semibold leading-tight text-gray-900'>
-                            Voices That <br /><span className='text-gray-600'>Trust My Work</span>
+                        <h2 className='text-5xl max-sm:text-4xl font-semibold leading-tight text-black/90'>
+                            Voices That <br /><span className='text-black'>Trust My Work</span>
                         </h2>
-                        <p className='text-gray-700 max-w-md leading-7 text-sm'>
+                        <p className='text-black max-w-md leading-7'>
                             Real words from real people. See what clients and collaborators have to say about working with me.
                         </p>
                     </div>
