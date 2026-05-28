@@ -1,5 +1,5 @@
 import React from 'react'
-import { values } from './aboutData'
+import { values } from './Aboutdata'
 
 const AboutStory = () => (
     <section className='px-10 max-sm:px-4 py-20'>

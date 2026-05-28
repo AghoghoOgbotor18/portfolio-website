@@ -1,5 +1,5 @@
 import React from 'react'
-import { stack, extraStack } from './aboutData'
+import { stack, extraStack } from './Aboutdata'
 
 const AboutStack = () => (
     <section className='px-10 max-sm:px-4 py-16 border-t border-white/5'>

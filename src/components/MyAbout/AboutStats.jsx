@@ -1,5 +1,5 @@
 import React from 'react'
-import { stats } from './aboutData'
+import { stats } from "./Aboutdata"
 
 const AboutStats = () => (
     <section className='px-10 max-sm:px-4 py-12 border-y border-white/5'>

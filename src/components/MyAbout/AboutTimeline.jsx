@@ -1,5 +1,5 @@
 import React from 'react'
-import { timeline } from './aboutData'
+import { timeline } from './Aboutdata'
 
 const AboutTimeline = () => (
     <section className='px-10 max-sm:px-4 py-20 border-t border-white/5'>
