@@ -32,7 +32,7 @@ const AboutCard = () => {
                 <h3 className='text-3xl font-semibold'>
                     About Me
                 </h3>
-                <p className='leading-7 text-gray-400'>
+                <p className='leading-7 text-gray-300'>
                     I'm Aghogho Ogbotor, a dedicated frontend developer with one year
                     experience. I enjoy transforming ideas into interactive user experiences while
                     continuously improving my frontend development skills through
@@ -45,7 +45,7 @@ const AboutCard = () => {
                 <h3 className='text-2xl font-semibold mb-4'>
                     Education
                 </h3>
-                <div className='flex flex-col gap-8 text-gray-400'>
+                <div className='flex flex-col gap-8 text-gray-300'>
                     <div className='flex flex-col gap-2'>
                     <h4 className='font-semibold text-lg'>M.Sc Computer Science</h4>
                     <p className='text-md'>University of Port Harcourt</p>

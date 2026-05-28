@@ -38,7 +38,7 @@ const ServicesInquiry = () => {
         <section
             id="inquiry"
             className='px-10 max-sm:px-4 py-20 border-t border-white/5 pb-40'
-            style={{ background: "linear-gradient(0deg, rgba(0,0,0, 0.9) 15%, rgb(202, 202, 202) 100%)" }}
+            style={{ background: "linear-gradient(0deg, rgba(0,0,0, 0.7) 2%, rgb(202, 202, 202) 100%)" }}
         >
             <div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 items-start'>
 

@@ -12,7 +12,7 @@ const AboutMe = () => {
       {/* Blur Background */}
       <div className='absolute w-[80%] h-[80%] top-[15%] left-[10%] blur-3xl bg-gray-300 opacity-50'></div>
 
-      <div className='relative z-10 flex flex-col justify-center items-center gap-6 container mx-auto px-6 md:px-20'>
+      <div className='relative z-10 flex flex-col justify-center items-center gap-6 container mx-auto px-3 md:px-15'>
         <p className='bg-black/90 shadow-xl flex justify-center items-center gap-1 text-sm py-2 px-3 rounded-xl w-fit'>
           <FiRadio />
           Frontend Developer
