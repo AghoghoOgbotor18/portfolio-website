@@ -17,7 +17,7 @@ const ServicesPricing = () => (
                 {pricing.map((p, i) => (
                     <div key={i} className={`relative flex flex-col gap-6 rounded-2xl p-7 border transition-all duration-300
                         ${p.highlight
-                            ? 'bg-white text-black border-white shadow-2xl shadow-white/10 scale-105'
+                            ? 'bg-white/90 text-black border-white shadow-2xl shadow-white/10 scale-105'
                             : 'bg-white/3 text-white border-white/5 hover:border-white/20'
                         }`}>
                         {p.highlight && (

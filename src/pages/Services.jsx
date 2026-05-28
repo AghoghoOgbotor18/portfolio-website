@@ -10,7 +10,7 @@ const Services = () => {
     useEffect(() => {
         scrollTo({top: 0, behavior: "smooth"})
     }, []);
-    
+
     return (
         <main className='text-white min-h-screen'>
             <ServicesHero />

@@ -3,7 +3,7 @@ import { FiArrowUpRight } from 'react-icons/fi'
 
 const Hero = () => {
     return (
-        <section className='container mx-auto py-20'>
+        <section className='container mx-auto py-20 min-h-screen flex justify-center items-center'>
             <div className='flex flex-col justify-center items-center gap-6'>
             <p className='py-1 px-3 bg-blue-500 text-black text-sm rounded-xl shadow-2xl'>
                 Available for Work

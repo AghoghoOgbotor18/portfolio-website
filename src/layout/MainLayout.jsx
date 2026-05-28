@@ -10,7 +10,7 @@ const MainLayout = () => {
         <Header />
       </header>
 
-      <main className='flex-grow pt-32'>
+      <main className='flex-grow'>
         <Outlet />
       </main>
 

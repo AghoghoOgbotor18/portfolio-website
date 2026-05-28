@@ -22,7 +22,7 @@ const AboutTimeline = () => (
                         <div className='flex flex-col gap-1 pb-8'>
                             <span className='text-xs text-white/30 tracking-wider'>{item.year}</span>
                             <h4 className='font-semibold text-white'>{item.title}</h4>
-                            <p className='text-sm text-gray-500'>{item.place}</p>
+                            <p className='text-sm text-gray-400'>{item.place}</p>
                         </div>
                     </div>
                 ))}

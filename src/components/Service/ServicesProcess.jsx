@@ -17,7 +17,7 @@ const ServicesProcess = () => (
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {process.map((item, i) => (
                     <div key={i} className='relative flex flex-col gap-4 bg-black/60 border border-black/10 hover:border-black/25 hover:bg-black/45 rounded-2xl p-6 transition-all duration-300 group'>
-                        <span className='text-4xl font-bold text-black/10 font-mono select-none group-hover:text-white transition-colors duration-300'>
+                        <span className='text-4xl font-bold text-black/30 font-mono select-none group-hover:text-white transition-colors duration-300'>
                             {item.step}
                         </span>
                         <h3 className='text-lg font-semibold text-white'>{item.title}</h3>

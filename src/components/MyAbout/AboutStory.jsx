@@ -7,13 +7,13 @@ const AboutStory = () => (
             <div className='flex-1 flex flex-col gap-5'>
                 <p className='text-xs uppercase tracking-widest text-white/30'>My Story</p>
                 <h2 className='text-4xl font-semibold'>How I got here</h2>
-                <p className='text-gray-400 leading-8'>
+                <p className='text-gray-300 leading-8'>
                     My journey into frontend development started with curiosity — a simple question of "how do websites actually work?" That curiosity turned into late nights with HTML and CSS, which turned into React projects, which turned into a genuine love for building things that people interact with every day.
                 </p>
-                <p className='text-gray-500 leading-8'>
+                <p className='text-gray-400 leading-8'>
                     With a background in Computer Science and certifications across frontend technologies, I've spent the last year building real-world projects — from e-commerce stores to web applications — always with a focus on design quality and user experience.
                 </p>
-                <p className='text-gray-500 leading-8'>
+                <p className='text-gray-400 leading-8'>
                     I'm currently pursuing my M.Sc in Computer Science at the University of Port Harcourt, deepening my technical foundation while continuing to grow as a developer through freelance work and personal projects.
                 </p>
             </div>
@@ -23,7 +23,7 @@ const AboutStory = () => (
                 {values.map((v, i) => (
                     <div key={i} className='flex flex-col gap-2 bg-white/3 border border-white/5 rounded-2xl p-5 hover:border-white/15 hover:-translate-y-0.5 transition-all duration-300'>
                         <h4 className='font-semibold text-white'>{v.title}</h4>
-                        <p className='text-gray-500 text-sm leading-7'>{v.description}</p>
+                        <p className='text-gray-400 text-sm leading-7'>{v.description}</p>
                     </div>
                 ))}
             </div>

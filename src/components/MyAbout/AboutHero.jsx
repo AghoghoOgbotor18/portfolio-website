@@ -18,12 +18,12 @@ const AboutHero = () => (
                 </p>
                 <h1 className='text-5xl md:text-6xl font-semibold leading-tight'>
                     I build things <br />
-                    <span className='text-gray-400'>for the web.</span>
+                    <span className='text-gray-300'>for the web.</span>
                 </h1>
-                <p className='text-gray-400 leading-8 max-w-lg'>
+                <p className='text-gray-300 leading-8 max-w-lg'>
                     I'm Aghogho Ogbotor — a frontend developer based in Nigeria with a passion for crafting clean, intentional digital experiences. I care deeply about the details that make a product feel polished and alive.
                 </p>
-                <p className='text-gray-500 leading-8 max-w-lg'>
+                <p className='text-gray-400 leading-8 max-w-lg'>
                     When I'm not pushing pixels, I'm studying computer science, exploring new frontend technologies, or helping other developers level up their skills.
                 </p>
                 <div className='flex flex-wrap gap-3'>

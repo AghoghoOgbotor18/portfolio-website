@@ -64,7 +64,7 @@ const ServicesInquiry = () => {
                                 <div className='w-2 h-2 rounded-full bg-black/40 flex-shrink-0' />
                                 <div>
                                     <p className='text-sm font-semibold text-black/80'>{item.label}</p>
-                                    <p className='text-xs text-gray-500'>{item.desc}</p>
+                                    <p className='text-xs text-black/70'>{item.desc}</p>
                                 </div>
                             </div>
                         ))}

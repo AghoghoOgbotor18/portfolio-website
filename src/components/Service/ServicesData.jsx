@@ -82,7 +82,7 @@ export const process = [
 export const pricing = [
     {
         plan: "Starter",
-        price: "₦80,000",
+        price: "₦100,000",
         description: "Perfect for individuals and small businesses needing a clean online presence.",
         features: [
             "Single page website",
@@ -97,7 +97,7 @@ export const pricing = [
     },
     {
         plan: "Professional",
-        price: "₦200,000",
+        price: "₦250,000",
         description: "For businesses that need a polished, multi-page site with advanced features.",
         features: [
             "Up to 5 pages",
