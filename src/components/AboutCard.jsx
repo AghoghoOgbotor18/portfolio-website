@@ -167,7 +167,6 @@ const AboutCard = () => {
                     [
                         "TypeScript",
                         "NextJS",
-                        "GSAP",
                         "UI/UX Design"
                     ].map((skill, index) => (
                         <span

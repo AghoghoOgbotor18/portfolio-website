@@ -31,7 +31,7 @@ export const timeline = [
 export const values = [
     { title: "Intentional Design", description: "Every interface I build starts with purpose. I believe good UI isn't just pretty — it guides, communicates, and converts." },
     { title: "Clean Code", description: "I write code that future-me (and other developers) can actually read. Maintainability is part of the deliverable." },
-    { title: "Continuous Growth", description: "I'm always learning — TypeScript, GSAP, UI/UX design. The best developers never stop being students." },
+    { title: "Continuous Growth", description: "I'm always learning — TypeScript, NextJS, UI/UX design. The best developers never stop being students." },
 ]
 
 export const socials = [
