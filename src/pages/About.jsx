@@ -1,10 +1,10 @@
 import React from 'react'
 import AboutHero from '../components/MyAbout/AboutHero'
-import AboutStats from '../components/MyAbout/Aboutstats'
-import AboutStory from '../components/MyAbout/Aboutstory'
-import AboutStack from '../components/MyAbout/Aboutstack'
-import AboutTimeline from '../components/MyAbout/Abouttimeline'
-import AboutCTA from '../components/MyAbout/Aboutcta'
+import AboutStats from '../components/MyAbout/AboutStats'
+import AboutStory from '../components/MyAbout/AboutStory'
+import AboutStack from '../components/MyAbout/AboutStack'
+import AboutTimeline from '../components/MyAbout/AboutTimeline'
+import AboutCTA from '../components/MyAbout/AboutCTA'
 
 const About = () => {
   return (
