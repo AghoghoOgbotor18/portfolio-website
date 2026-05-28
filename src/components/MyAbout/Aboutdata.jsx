@@ -14,7 +14,6 @@ export const stack = [
     {icon: <TbBrandNextjs size={22} />, name: "NextJS"},
     { icon: <TbBrandFirebase size={22} />, name: "Firebase" },
     { icon: <TbBrandWordpress size={22} />, name: "WordPress" },
-    {icon: <TbBrandShopee size={22} />, name: "Shopify"} 
 ]
 
 export const extraStack = [
