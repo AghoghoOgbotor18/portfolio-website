@@ -72,7 +72,7 @@ const ServicesInquiry = () => {
                 </div>
 
                 {/* Form */}
-                <div className='flex-1 bg-black/60 border border-white/5 rounded-3xl p-8 max-sm:p-5 w-full'>
+                <div className='flex-1 bg-black/70 border border-white/5 rounded-3xl p-8 max-sm:p-5 w-full'>
                     <div className='flex flex-col gap-5'>
                         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                             <div className='flex flex-col gap-1.5'>
