@@ -4,11 +4,11 @@ import { process } from './ServicesData'
 const ServicesProcess = () => (
     <section
         className='px-10 max-sm:px-4 py-20 border-t border-white/5'
-        style={{ background: "linear-gradient(0deg, rgba(0,0,0, 0.9) 15%, rgb(202, 202, 202) 100%)" }}
+        style={{ background: "linear-gradient(0deg, rgba(0,0,0, 0.9) 2%, rgb(202, 202, 202) 100%)" }}
     >
         <div className='max-w-6xl mx-auto flex flex-col gap-12'>
             <div className='flex flex-col gap-2'>
-                <p className='text-xs uppercase tracking-widest text-black/60'>How I Work</p>
+                <p className='text-xs uppercase tracking-widest text-black/70'>How I Work</p>
                 <h2 className='text-4xl font-semibold text-black/90'>My Process</h2>
                 <p className='text-black/90 max-w-lg leading-7 text-sm mt-2'>
                     A simple, transparent workflow so you always know what's happening and what comes next.

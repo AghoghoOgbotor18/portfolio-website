@@ -13,7 +13,7 @@ const ServicesPricing = () => (
                     Transparent pricing with no hidden fees. Every project is unique — these are starting points.
                 </p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                 {pricing.map((p, i) => (
                     <div key={i} className={`relative flex flex-col gap-6 rounded-2xl p-7 border transition-all duration-300
                         ${p.highlight
