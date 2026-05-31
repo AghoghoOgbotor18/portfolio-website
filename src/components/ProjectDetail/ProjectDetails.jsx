@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import { projects } from './projectData'
+import { projects } from './ProjectData'
 import ProjectHero from './ProjectHero'
 import ProjectImage from './ProjectImage'
 import ProjectOverview from './ProjectOverview'
