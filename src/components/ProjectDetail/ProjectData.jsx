@@ -1,0 +1,95 @@
+import ponytelle from "../../assets/ponytelle.webp"
+import shopbuy from "../../assets/shopbuy.webp"
+import salarySplit from "../../assets/salary-spliter.webp"
+import qikMeet from "../../assets/qikMeet.webp"
+import aippt from "../../assets/aippt.webp"
+
+export const projects = [
+    {
+        id: 1,
+        title: "Ponytelle",
+        tagline: "A luxury wig e-commerce experience built to feel real.",
+        description: "Ponytelle is a premium, responsive e-commerce web application designed to simulate the feel of a real luxury beauty brand. It evolved from a simple storefront into a polished frontend application with persistent state, smart search behavior, reusable components, and mobile-first interactions.",
+        image: ponytelle,
+        category: "E-Commerce",
+        stack: ["React", "Redux Toolkit", "React Router", "Tailwind CSS", "LocalStorage"],
+        why: "I wanted to go beyond a basic storefront and build something that actually behaved like a production app. Ponytelle became my deep dive into state management, event handling, and UX-focused thinking — all wrapped in a luxury aesthetic.",
+        challenges: [
+            { title: "Search Only Worked on the Homepage", problem: "The search state was stored locally in the homepage component, so searching from the cart or product details page simply didn't work.", solution: "I lifted the search state into Redux Toolkit, making it globally accessible. From any page, a search now triggers an auto-redirect to the shop and filters results in real time." },
+            { title: "Wishlist Items Vanished on Refresh", problem: "Every page refresh wiped the wishlist clean — a frustrating experience for any user who saves items and comes back later.", solution: "I synced the Redux wishlist state with localStorage on every update, and rehydrated it on app load. Wishlist items now persist across sessions without a backend." },
+            { title: "Clicking the Heart Opened the Product Page", problem: "The wishlist heart button sat inside a Link component, so every click both toggled the wishlist and navigated away from the page.", solution: "I used e.stopPropagation() and e.preventDefault() to isolate the heart's click event from the parent link — a small fix with a big UX impact." },
+        ],
+        features: ["Global search with auto-redirect from any page", "Persistent wishlist with localStorage sync", "Cart with length and color variant selection", "Dynamic navbar with scroll-aware transparency", "Mobile search overlay", "Toast notifications for cart actions"],
+        outcome: "Ponytelle evolved from a basic storefront into a production-style frontend application. Every bug I hit taught me something real about React, Redux, and building for users — not just for the screen.",
+        liveUrl: "#", codeUrl: "#",
+    },
+    {
+        id: 2,
+        title: "ShopBuy Dashboard",
+        tagline: "An admin dashboard that taught me how React really works.",
+        description: "A responsive and performance-optimized admin interface with dashboards, analytics, e-commerce management, and inventory pages. Built with React + Vite, it features lazy-loaded pages, global theme switching, and a clean sidebar navigation.",
+        image: shopbuy,
+        category: "Dashboard",
+        stack: ["React", "Vite", "React Router", "Context API", "Tailwind CSS", "Framer Motion"],
+        why: "I built ShopBuy Dashboard specifically to understand the parts of React I'd been avoiding — code splitting, Context API, and scalable project structure. I needed a real project to learn in, not just a tutorial to follow.",
+        challenges: [
+            { title: "Slow Initial Load — Everything Bundled Together", problem: "With all pages imported at the top of the app, the initial JavaScript bundle was large and the first load was noticeably slow.", solution: "I implemented React.lazy and Suspense to split every page into its own chunk. Pages now load on demand — the dashboard only loads what the user actually visits." },
+            { title: "Prop Drilling for Theme and Sidebar State", problem: "Passing theme and sidebar state through multiple component layers was messy, repetitive, and hard to maintain.", solution: "I built a ThemeContext and an OpenContext using Context API and wrapped the entire app in both providers. Any component can now access or update global state directly — no prop drilling." },
+        ],
+        features: ["Lazy-loaded pages with React.lazy and Suspense", "Global dark/light theme toggle via Context API", "Sidebar open/close state managed globally", "Responsive layout with collapsible sidebar", "Smooth page animations with Framer Motion", "Reusable UI components throughout"],
+        outcome: "This project made me understand why patterns exist in React, not just how to copy them. I went from following code to writing it with intention.",
+        liveUrl: "https://shop-buy-admin.vercel.app", codeUrl: "#",
+    },
+    {
+        id: 3,
+        title: "Salary Splitter",
+        tagline: "Know exactly where your money goes before it arrives.",
+        description: "A smart budgeting tool that breaks down your salary into expenses, savings, emergency funds, and miscellaneous allocations — with real-time validation, formatted number inputs, and instant feedback when your budget doesn't add up.",
+        image: salarySplit,
+        category: "Utility Tool",
+        stack: ["HTML5", "CSS3", "Vanilla JavaScript"],
+        why: "I built this during a phase where I was learning to manage my own finances. I couldn't find a simple, no-fuss tool that let me plan a monthly budget the way I thought about it — so I built one.",
+        challenges: [
+            { title: "Number Formatting Breaking Calculations", problem: "As users typed large numbers, I auto-formatted them with commas (e.g. 10,000). But when it came time to do math, JavaScript couldn't parse a number with commas in it.", solution: "Before every calculation, I stripped all commas using .replace(/,/g, '') to get a clean integer. Format for display, strip for logic — simple but easy to miss." },
+            { title: "Dynamically Added Inputs Surviving the Reset", problem: "When a user clicked reset, the form cleared but all the dynamically added expense fields stayed on the page, leaving the UI in a broken state.", solution: "On reset, I restored the entire expense container's innerHTML back to its original default structure, effectively wiping all dynamic inputs and starting fresh." },
+            { title: "Fixed Expenses Exceeding the Salary", problem: "If a user's recurring expenses alone exceeded their salary, the app would try to calculate savings on a negative balance — producing nonsensical results.", solution: "I added an early exit check: if fixed expenses exceed salary, skip the savings and misc calculations entirely and show only the fixed expense breakdown with a clear warning." },
+        ],
+        features: ["Dynamic expense input fields (add/remove)", "Real-time number formatting with commas", "Percentage-based savings and emergency fund split", "Overspend detection with user-friendly warnings", "Full form reset including dynamic fields", "Works entirely in the browser — no backend needed"],
+        outcome: "A genuinely useful tool that I still use to plan my own monthly budget. Building it without a framework sharpened my vanilla JS skills more than any tutorial could.",
+        liveUrl: "#", codeUrl: "#",
+    },
+    {
+        id: 4,
+        title: "QikMeet",
+        tagline: "Instant video calls. No account. No friction.",
+        description: "A lightweight video-calling web app where users create a room, share a link, and anyone can join instantly — no sign-up required. Powered by the ZEGOCLOUD API for video, chat, and participant management.",
+        image: qikMeet,
+        category: "Real-Time App",
+        stack: ["HTML", "CSS", "JavaScript", "ZEGOCLOUD API"],
+        why: "I hadn't learned authentication yet, and instead of waiting, I asked myself: what if not needing an account was actually the feature? That reframe led to QikMeet — a tool built around removing every unnecessary step between a user and what they want to do.",
+        challenges: [
+            { title: "Room Name Collisions", problem: "If two separate groups both named their room 'meeting', they'd end up in the same video call without realising it.", solution: "I appended a random number to every room name at generation time — so 'meeting' becomes 'meeting-4823'. The URL stays readable, but the chance of collision drops to near zero." },
+        ],
+        features: ["Instant room creation — no account needed", "Shareable room link for easy invites", "Multi-participant video calls", "Real-time text chat", "Unique room ID generation to prevent collisions", "Fully responsive interface"],
+        outcome: "QikMeet taught me that constraints can be creative fuel. What started as a workaround became a genuine product philosophy: remove every unnecessary step.",
+        liveUrl: "#", codeUrl: "#",
+    },
+    {
+        id: 5,
+        title: "AIPPT",
+        tagline: "Turn a topic into a PowerPoint presentation in seconds.",
+        description: "A full-stack AI-powered app that generates professional presentations from a single prompt — complete with AI-structured content, auto-fetched images, a live slide editor, in-browser PDF preview, and instant PPTX download.",
+        image: aippt,
+        category: "Full-Stack / AI",
+        stack: ["React", "Vite", "Node.js", "Express", "OpenAI API", "Unsplash API", "PptxGenJS", "Firebase Auth", "Framer Motion"],
+        why: "I wanted to build something that solved a real problem — spending too long formatting slides. AIPPT was my first serious full-stack project, forcing me to tackle binary file handling, server-side processing, and browser limitations head on.",
+        challenges: [
+            { title: "Images Appeared in Browser But Not in Downloaded PPTX", problem: "Unsplash images displayed perfectly in the live preview, but the downloaded PowerPoint file showed blank image slots. PPTX files can't embed external URLs — they need actual binary data.", solution: "I built a server-side image cache that downloads each Unsplash image, converts it to a Base64 buffer, and embeds it directly into the PPTX using PptxGenJS." },
+            { title: "Browsers Can't Preview PPTX Files", problem: "There's no native browser support for rendering PowerPoint files, so users had no way to preview before downloading.", solution: "I added a backend conversion step that transforms the PPTX into a PDF, encodes it as Base64, and streams it to the frontend where it renders inside an embed tag." },
+            { title: "Firebase Bloating the Bundle", problem: "Importing the full Firebase SDK added significant weight to the initial bundle, slowing down the first load.", solution: "I switched to modular Firebase imports, lazy-loaded all auth-related components, and reduced the Firebase footprint to ~17 KB gzipped." },
+        ],
+        features: ["AI-generated slide content via OpenAI (structured JSON)", "Auto-fetched relevant images from Unsplash per slide", "Live slide editor — reorder, edit, preview in real time", "PPTX download with embedded images", "In-browser PDF preview before download", "Firebase Auth (Email + Google OAuth)", "Memory-safe Blob URL cleanup"],
+        outcome: "AIPPT pushed me into real engineering territory — binary files, API orchestration, performance optimization, and memory management. It's the most technically complex thing I've built.",
+        liveUrl: "#", codeUrl: "#",
+    },
+]

@@ -7,15 +7,14 @@ import salarySplit from "../assets/salary-spliter.webp"
 import shopbuy from "../assets/shopbuy.webp"
 import nairabank from "../assets/nairabank.webp"
 import hospitality from "../assets/hospitality.webp"
+import qikMeet from "../assets/qikMeet.webp"
 
 const projects = [
-    { id: 1, image: ponytelle,   title: "Ponytelle",       code: "#", demo: "#", span: "md:col-span-2" },
-    { id: 2, image: riyans,      title: "Riyans",          code: "#", demo: "#", span: "md:col-span-1" },
-    { id: 3, image: aippt,       title: "AI PPT",          code: "#", demo: "#", span: "md:col-span-1" },
-    { id: 4, image: salarySplit, title: "Salary Splitter",  code: "#", demo: "#", span: "md:col-span-2" },
-    { id: 5, image: shopbuy,     title: "ShopBuy",         code: "#", demo: "#", span: "md:col-span-1" },
-    { id: 6, image: nairabank,   title: "NairaBank",       code: "#", demo: "#", span: "md:col-span-1" },
-    { id: 7, image: hospitality, title: "Hospitality",     code: "#", demo: "#", span: "md:col-span-1" },
+    { id: 1, image: ponytelle,   title: "Ponytelle",       description: "Luxury wig e-commerce with persistent cart, global search, and wishlist — built to feel like a real brand.", code: "#", demo: "#", span: "md:col-span-2" },
+    { id: 2, image: shopbuy,     title: "Admin Dashboard", description: "E-commerce admin UI with lazy-loaded pages, dark/light theme, and Context API state management.", code: "#", demo: "#", span: "md:col-span-1" },
+    { id: 3, image: salarySplit, title: "Salary Splitter",  description: "Smart budgeting tool that splits your salary into expenses, savings, and emergency funds in real time.", code: "#", demo: "#", span: "md:col-span-1" },
+    { id: 4, image: qikMeet,     title: "QikMeet",          description: "Instant video calls with shareable room links — no account, no friction, just click and meet.", code: "#", demo: "#", span: "md:col-span-2" },
+    { id: 5, image: aippt,       title: "AI PPT",           description: "Full-stack AI app that turns a topic into a downloadable PowerPoint — with live editor and in-browser PDF preview.", code: "#", demo: "#", span: "md:col-span-3" },
 ]
 
 const ProjectCard = () => {
@@ -32,11 +31,11 @@ const ProjectCard = () => {
                         transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl hover:shadow-black/60`}
                 >
                     {/* Image + hover overlay */}
-                    <div className="relative overflow-hidden w-full flex-1 min-h-0 rounded-lg">
+                    <div className="relative overflow-hidden w-full flex-1 min-h-0 rounded-lg aspect-video">
                         <img
                             src={project.image}
                             alt={project.title}
-                            className="w-full h-full transition-all duration-500 group-hover:scale-105 group-hover:blur-sm group-hover:brightness-40"
+                            className="w-full h-full object-fit transition-all duration-500 group-hover:scale-105 group-hover:blur-sm group-hover:brightness-40"
                         />
 
                         {/* Hover overlay */}
@@ -48,22 +47,25 @@ const ProjectCard = () => {
                     </div>
 
                     {/* Bottom Bar */}
-                    <div className="flex justify-between items-center py-3 border-t border-white/5">
-                        <span className="text-white/60 text-sm tracking-wide">{project.title}</span>
-                        <div className="flex gap-2" onClick={(e) => e.stopPropagation()}>
-                            <Link
-                                to={project.code}
-                                className="text-xs text-white/50 hover:text-white border border-white/10 hover:border-white/30 py-3 px-4 rounded-lg transition-all duration-200"
-                            >
-                                View Code
-                            </Link>
-                            <Link
-                                to={project.demo}
-                                className="text-xs text-black font-semibold button-white rounded-lg transition-all duration-200"
-                            >
-                                Live Demo
-                            </Link>
+                    <div className="flex flex-col gap-2 pt-3 pb-1 border-t border-white/5 mt-3">
+                        <div className="flex justify-between items-center">
+                            <span className="text-white/80 text-sm font-medium tracking-wide">{project.title}</span>
+                            <div className="flex gap-2" onClick={(e) => e.stopPropagation()}>
+                                <Link
+                                    to={project.code}
+                                    className="text-xs text-white/50 hover:text-white border border-white/10 hover:border-white/30 flex justify-center items-center py-1.5 px-3 rounded-lg transition-all duration-200"
+                                >
+                                    View Code
+                                </Link>
+                                <Link
+                                    to={project.demo}
+                                    className="text-xs text-black font-semibold button-white rounded-lg transition-all duration-200"
+                                >
+                                    Live Demo
+                                </Link>
+                            </div>
                         </div>
+                        <p className="text-white/50 text-xs leading-5">{project.description}</p>
                     </div>
                 </div>
             ))}

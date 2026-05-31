@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../components/Hero'
 import AboutMe from '../components/AboutMe'
 import Project from '../components/Project'
@@ -9,6 +9,11 @@ import Services from '../components/Services'
 import Testimonials from '../components/Testimonials/Testimonials'
 
 const Home = () => {
+
+    useEffect(() => {
+      scrollTo({top: 0, behavior: "smooth"})
+    }, []);
+
     return (
       <>
         <Hero />

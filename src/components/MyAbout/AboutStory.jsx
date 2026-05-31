@@ -2,7 +2,7 @@ import React from 'react'
 import { values } from './Aboutdata'
 
 const AboutStory = () => (
-    <section className='px-10 max-sm:px-4 py-20' style={{ background: "linear-gradient(0deg, rgba(0,0,0, 0.2) 0%, rgb(202, 202, 202) 80%)" }}>
+    <section className='px-10 max-sm:px-4 py-20' style={{ background: "linear-gradient(0deg, rgba(0,0,0, 0.2) 2%, rgba(202, 202, 202) 50%)" }}>
         <div className='max-w-6xl mx-auto flex flex-col md:flex-row gap-16'>
             <div className='flex-1 flex flex-col gap-5'>
                 <p className='text-xs uppercase tracking-widest text-black/70'>My Story</p>
