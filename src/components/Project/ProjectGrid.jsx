@@ -13,7 +13,9 @@ const ProjectGrid = ({ projects }) => {
     )
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 relative'>
+            {/* Blur Background */}
+            <div className='absolute w-[80%] h-[80%] top-[15%] left-[10%] blur-3xl bg-gray-300 opacity-50'></div>
             {projects.map((project, i) => (
                 <div
                     key={project.id}
@@ -42,7 +44,7 @@ const ProjectGrid = ({ projects }) => {
                     </div>
 
                     {/* Bottom */}
-                    <div className='flex flex-col gap-2 p-4 border-t border-white/5'>
+                    <div className='flex flex-col gap-2 p-4 border-t border-white/5 bg-black/60'>
                         <div className='flex justify-between items-center'>
                             <h3 className='text-white font-medium text-sm'>{project.title}</h3>
                             <div className='flex gap-2' onClick={(e) => e.stopPropagation()}>
@@ -59,7 +61,7 @@ const ProjectGrid = ({ projects }) => {
                         <p className='text-white/50 text-xs leading-5'>{project.description}</p>
                         <div className='flex flex-wrap gap-1.5 mt-1'>
                             {project.stack.map((s, j) => (
-                                <span key={j} className='text-xs text-white/30 border border-white/10 px-2 py-0.5 rounded-full'>
+                                <span key={j} className='text-xs text-white/30 border border-white/10 hover:border-white/15 hover:text-white/40 px-2 py-0.5 rounded-full'>
                                     {s}
                                 </span>
                             ))}

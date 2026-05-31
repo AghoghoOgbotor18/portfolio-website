@@ -16,7 +16,6 @@ const Services = () => {
             <ServicesHero />
             <ServicesList />
             <ServicesProcess />
-            <ServicesPricing />
             <ServicesFAQ />
             <ServicesInquiry />
         </main>

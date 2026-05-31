@@ -29,14 +29,14 @@ const ProjectCTA = () => {
 
                     <Link
                         to="/about"
-                        className='px-7 py-3 rounded-full border border-black/10 text-black hover:bg-black hover:text-white transition'
+                        className='px-7 py-3 rounded-full border border-black/30 text-black hover:bg-black hover:text-white transition'
                     >
                         About Me
                     </Link>
 
                     <Link
                         to="/services#inquiry"
-                        className='px-7 py-3 rounded-full bg-black text-white hover:scale-105 transition'
+                        className='px-7 py-3 rounded-full bg-black text-white hover:scale-101 transition'
                     >
                         Start a Project
                     </Link>
