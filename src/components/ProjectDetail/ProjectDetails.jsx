@@ -21,8 +21,8 @@ const ProjectDetails = () => {
 
     if (!project) return (
         <div className='min-h-screen bg-black/95 text-white flex flex-col items-center justify-center gap-4'>
-            <p className='text-gray-400'>Project not found.</p>
-            <Link to="/projects" className='button-dark'>Back to Projects</Link>
+            <p className='text-gray-400'>Project details not found.</p>
+            <Link to="/projects" className='button-white'>Back to Projects</Link>
         </div>
     )
 
