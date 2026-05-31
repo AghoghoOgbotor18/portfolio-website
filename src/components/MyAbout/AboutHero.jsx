@@ -4,7 +4,7 @@ import { FiArrowUpRight, FiRadio } from 'react-icons/fi'
 import { FaLinkedin, FaFacebook, FaTiktok, FaPhone } from 'react-icons/fa'
 import { MdRadioButtonChecked } from 'react-icons/md'
 import { HiDownload } from 'react-icons/hi'
-import userPhoto from "../../assets/sylvia-photo.jpg"
+import userPhoto from "../../assets/Aghogho-photo.webp"
 
 const AboutHero = () => (
     <section className='relative overflow-hidden py-24 px-10 max-sm:px-4'>

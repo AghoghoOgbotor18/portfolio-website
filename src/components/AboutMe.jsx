@@ -1,5 +1,5 @@
 import React from 'react'
-import userPhoto from "../assets/sylvia-photo.jpg"
+import userPhoto from "../assets/Aghogho-photo.webp"
 import { FiRadio } from "react-icons/fi"
 import { Link } from 'react-router-dom'
 import { FaLinkedin, FaFacebook, FaTiktok, FaPhone, FaMarkdown, FaCheck } from "react-icons/fa"
