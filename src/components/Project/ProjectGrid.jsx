@@ -15,7 +15,7 @@ const ProjectGrid = ({ projects }) => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 relative'>
             {/* Blur Background */}
-            <div className='absolute w-[80%] h-[80%] top-[15%] left-[10%] blur-3xl bg-gray-300 opacity-50'></div>
+            <div className='absolute w-[80%] h-[95%] md:h-[80%] top-[5%] md:top-[15%] left-[10%] blur-3xl bg-gray-300 opacity-50'></div>
             {projects.map((project, i) => (
                 <div
                     key={project.id}
