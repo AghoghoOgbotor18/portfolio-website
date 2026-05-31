@@ -9,7 +9,7 @@ const ProjectWhy = ({ project }) => (
                 <span className='text-xs text-white/40 text-center'>Why I built this</span>
             </div>
             <div className='flex flex-col gap-3'>
-                <p className='text-xs uppercase tracking-widest text-black/40'>Motivation</p>
+                <p className='text-xs uppercase tracking-widest text-black/50'>Motivation</p>
                 <h2 className='text-3xl font-semibold text-black/90'>Why I Built This</h2>
                 <p className='text-black/80 leading-8 max-w-2xl'>{project.why}</p>
             </div>

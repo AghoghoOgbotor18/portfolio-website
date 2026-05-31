@@ -6,7 +6,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
-import ProjectDetails from "./Components/ProjectDetail/ProjectDetails"
+import ProjectDetails from "./components/ProjectDetail/ProjectDetails"
 
 const App = () => {
   return (

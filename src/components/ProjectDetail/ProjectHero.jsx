@@ -8,7 +8,7 @@ const ProjectHero = ({ project }) => {
     const navigate = useNavigate()
 
     return (
-        <section className='relative bg-black/95 py-20 px-10 pt-30 max-sm:px-4 overflow-hidden'>
+        <section className='relative bg-black/95 py-20 px-10 pt-35 max-sm:px-4 overflow-hidden'>
             <div className='absolute w-[60%] h-[60%] top-[30%] left-[20%] blur-3xl bg-gray-400 opacity-5 pointer-events-none' />
             <div className='relative z-10 max-w-6xl mx-auto flex flex-col gap-8'>
                 <button

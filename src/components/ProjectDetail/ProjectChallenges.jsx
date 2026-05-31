@@ -6,7 +6,7 @@ const ProjectChallenges = ({ project }) => (
             <div className='flex flex-col gap-2'>
                 <p className='text-xs uppercase tracking-widest text-white/30'>Problem Solving</p>
                 <h2 className='text-3xl font-semibold text-white'>Challenges & Solutions</h2>
-                <p className='text-gray-500 text-sm max-w-lg leading-7'>Every project hits walls. Here's how I worked through them.</p>
+                <p className='text-gray-400 text-sm max-w-lg leading-7'>Every project hits walls. Here's how I worked through them.</p>
             </div>
             <div className='flex flex-col gap-4'>
                 {project.challenges.map((c, i) => (
@@ -14,7 +14,7 @@ const ProjectChallenges = ({ project }) => (
                         <div className='bg-rose-500/5 border-r border-white/5 p-6 flex flex-col gap-3'>
                             <span className='text-xs font-mono text-rose-400/60 uppercase tracking-widest'>Problem</span>
                             <h3 className='text-white font-semibold'>{c.title}</h3>
-                            <p className='text-gray-400 text-sm leading-7'>{c.problem}</p>
+                            <p className='text-gray-300 text-sm leading-7'>{c.problem}</p>
                         </div>
                         <div className='bg-emerald-500/5 p-6 flex flex-col gap-3'>
                             <span className='text-xs font-mono text-emerald-400/60 uppercase tracking-widest'>Solution</span>
